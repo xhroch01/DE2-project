@@ -29,7 +29,7 @@ Link to this file in your GitHub repository:
    
    ![your figure](IMAGES/stromfinal.PNG)
       
-   ![your figure](IMAGES/blokoveschema.PNG)
+   ![your figure](IMAGES/blokové schema.PNG)
 
 ## Hardware description
 For measuring we used capacitance and temperature sensors. When the temperature was higher than the desired value, the system turns on the fans to lower the temperature on the contrary when the temperature reached a value lower, than the desired value, the system turns on the heating. 
