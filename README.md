@@ -52,10 +52,20 @@ Library is used in the project to handle the interrupts
 #### <util_delay.h>
 Library "util_delay.h" is utilized for the definition of CPU frequency, also can be used for example as busy-wait function.
 
-#### <util_delay.h>
-Library "util_delay.h" is utilized for the definition of CPU frequency, also can be used for example as busy-wait function.
+#### <stdlib.h>
+This library defines variable types.
 
+#### <math.h>
+The math.h header defines various mathematical functions and one macro.
 
+#### <timer.h>
+In this library are defined overflows for interrupts.
+
+#### <gpio.h>
+This library is used for AVR pin configurations.
+
+#### <lcd_definitions.h>, <lcd.h>
+Those two libraries are utilized to control the LCD. Concretely the "lcd.h" defines place (coordinates) to write the message on LCD (function: lcd_gotoxy), also the message itself (lcd_puts). The "lcd-definitions.h" library defines LCD pins.
 ## Main application
 
 Write your text here.
