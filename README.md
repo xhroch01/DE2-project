@@ -165,19 +165,19 @@ ISR(TIMER1_OVF_vect)
 		}
 		timing = 0;                               // timer reset
 	}
-	if (timing == 3)                              // 5 min (75)
+	if (timing == 75)                              // 5 min (75)
 	{
 		////PORTB = PORTB & ~(1<<PINB0); //heating turned off
 		////PORTC = PORTC & ~(1<<PINC1); //heating turned off
 		GPIO_write_low(&PORTC, HEAT);             // turn off the heating
 	}
-	if (timing == 3) // 3 min (45)
+	if (timing == 45) // 3 min (45)
 	{
 		////PORTB = PORTB & ~(1<<PINB1); //fan turned off
 		////PORTC = PORTC & ~(1<<PINC2); //fan turned off
 		GPIO_write_low(&PORTC, FAN);             // turn off the fan
 	}
-	if (timing == 3) // 1 min (15)
+	if (timing == 15) // 1 min (15)
 	{
 		////PORTB = PORTB & ~(1<<PINB2); //valve1 closed
 		////PORTB = PORTB & ~(1<<PINB3); //valve2 closed
