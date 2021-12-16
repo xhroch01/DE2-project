@@ -94,7 +94,7 @@ Those two libraries are utilized to control the LCD. Concretely the "lcd.h" libr
 ## Main application
 
 ### Program
-Sem bych hodil bloky kˇodů a pospsal je
+The first example shows the function that monitors whether the button was pressed. If the button is pressed, the demanded temperature is incremented.
 ```c
     while (1)
     {
@@ -116,7 +116,7 @@ Sem bych hodil bloky kˇodů a pospsal je
 		    }
     }
 ```
-
+The second example shows the interrupt service routine that triggers the moisture measurement, AD conversion needed for the temperature measurement. It also gives orders to the appropriate peripherals.
 ```c
 ISR(TIMER1_OVF_vect)
 {	timing = timing + 1;
@@ -186,7 +186,7 @@ ISR(TIMER1_OVF_vect)
 	}
 }
 ```
-
+The third example shows the interrupt service routine activated when the AD conversion is done. It shows also the method how the temperature is calculated and displayed.
 ```c
 ISR(ADC_vect)
 {
