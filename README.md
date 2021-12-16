@@ -58,6 +58,8 @@ High Precision Temperature-to-Voltage Converter
 
 [TC1046 datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/21496C.pdf?fbclid=IwAR3JS0fTOTgRv-BpEHv4b_GTBlFUy0KrOrPso-AE79n30IDYJwicSIyW-h8)
 
+### Humidity sensor
+   ![your figure](IMAGESmoisture.png)
 <a name="libs"></a>
 
 ## Libraries description
