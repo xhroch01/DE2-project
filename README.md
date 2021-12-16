@@ -49,7 +49,7 @@ Soil moisture level measurement is based on the electric resistance of the soil,
 Flash memory 32 KB, 14 digital pins a 6 analog pins, range USB a SPI.
 
 ### LCD
-   ![your figure](IMAGES/displej.png)
+   ![your figure](IMAGES/LCD.PNG)
    
 2 rows, 16 characters 
 
@@ -91,9 +91,29 @@ Those two libraries are utilized to control the LCD. Concretely the "lcd.h" libr
 ### Program
 Sem bych hodil bloky kˇodů a pospsal je
 ```c
-xxx
+    while (1)
+    {
+		    if ((GPIO_read(&PIND, BUTTON)) == 0)                 // button is pushed
+		    {
+			    temperature_set = temperature_set + 1;
+			    lcd_gotoxy(4, 0);
+				char temperature_set_itoa[2] = "--";
+				itoa(temperature_set, temperature_set_itoa, 10); // temperature is converted into a string
+			    lcd_puts(temperature_set_itoa);                  // temperature is displayed
+			    if (temperature_set == 41)                       // maximum demandable temperature is exceeded
+			    {
+				    temperature_set = 10;
+				    lcd_gotoxy(4, 0);
+					char temperature_set_itoa[2] = "--";
+					itoa(temperature_set, temperature_set_itoa, 10);
+				    lcd_puts(temperature_set_itoa);
+			    }
+		    }
+    }
 ```
+```c
 
+```
 ### Implementation
 tady bych hodil zpracování, foto zapojeni atd
 
