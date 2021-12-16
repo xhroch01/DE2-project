@@ -43,8 +43,8 @@ Flash memory 32 KB, 14 digital pins a 6 analog pins, range USB a SPI.
 
 In this project we utilized libraries such as: "avr/io.h", "avr/interrupt.h", "util/delay.h", "stdlib.h", "math.h", "timer.h", "gpio.h", "lcd.h" and lcd_definitions.h
 
-####<avr/io.h>
-####<avr/interrupt.h>
+#### <avr/io.h>
+#### <avr/interrupt.h>
 
 ## Main application
 
