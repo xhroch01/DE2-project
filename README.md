@@ -2,9 +2,12 @@
 
 ### Team members
 
-* Aleš Horna [GitHub reference](https://github.com/xhorna16/Digital-electronics-2)
-* Jakub Hlaváček [GitHub reference](https://github.com/Jakubhl/Digital-electronics-2)
-* Vojtěch Hroch [GitHub reference](https://github.com/xhroch01/Digital-electronics-2)
+* Aleš Horna (responsible for code writing and implementation/simulation)
+* [GitHub reference](https://github.com/xhorna16/Digital-electronics-2)
+* Jakub Hlaváček (responsible for readme file completition and finishing touches)
+* [GitHub reference](https://github.com/Jakubhl/Digital-electronics-2)
+* Vojtěch Hroch (responsible for video presentation and diagrams)
+* [GitHub reference](https://github.com/xhroch01/Digital-electronics-2)
 
 ### Table of contents
 
