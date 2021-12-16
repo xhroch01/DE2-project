@@ -35,7 +35,7 @@ The main objective is to implement techniques to control greenhouse. Explained b
    ![your figure](IMAGES/stromfinal.PNG)
 
 ### Block diagram
-   ![your figure](IMAGES/blokoveschema.png)
+   ![your figure](IMAGES/blokoveschéma.png)
 
 ## Hardware description
 For measuring we used capacitance and temperature sensors. When the temperature was higher than the desired value, the system turns on the fans to lower the temperature on the contrary when the temperature reached a value lower, than the desired value, the system turns on the heating. 
@@ -60,7 +60,9 @@ High Precision Temperature-to-Voltage Converter
 [TC1046 datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/21496C.pdf?fbclid=IwAR3JS0fTOTgRv-BpEHv4b_GTBlFUy0KrOrPso-AE79n30IDYJwicSIyW-h8)
 
 ### Moisture sensor
-   ![your figure](IMAGES/moisture.png)
+
+![your figure](IMAGES/moisture.PNG)
+
 <a name="libs"></a>
 
 ## Libraries description
@@ -225,7 +227,7 @@ The video describing our project was made in OpenShot software environment. The 
 ## References
 
 ### 1. 
-[YouTube](https://www.youtube.com/watch?v=zIkkEqXffzc)
+[YouTube - video presentation](https://www.youtube.com/watch?v=zIkkEqXffzc)
 
 ### 2. 
 [Tomas-Fryza/Digital-electronics-2](https://github.com/tomas-fryza/Digital-electronics-2)
