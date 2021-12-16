@@ -23,7 +23,7 @@ Link to this file in your GitHub repository:
 
 ## Project objectives
 
-### Schéma zapojení:
+### Scheme:
 
    ![your figure](IMAGES/celkoveschema.PNG)
 
@@ -40,7 +40,7 @@ Soil moisture level measurement is based on the electric resistance of the soil,
 Flash memory 32 KB, 14 digital pins a 6 analog pins, range USB a SPI.
 
 ## Libraries description
-
+<a name="libs"></a>
 In this project we utilized libraries such as: "avr/io.h", "avr/interrupt.h", "util/delay.h", "stdlib.h", "math.h", "timer.h", "gpio.h", "lcd.h" and lcd_definitions.h
 
 #### <avr/io.h>
@@ -84,4 +84,4 @@ Write your text here
 [YouTube](https://www.youtube.com/)
 
 ### 2. 
-[Tomas-Fryza-Digital-electronics-2](https://github.com/tomas-fryza/Digital-electronics-2)
+[Tomas-Fryza/Digital-electronics-2](https://github.com/tomas-fryza/Digital-electronics-2)
