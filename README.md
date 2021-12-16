@@ -57,11 +57,10 @@ Flash memory 32 KB, 14 digital pins a 6 analog pins, range USB a SPI.
 ### TC1046
 High Precision Temperature-to-Voltage Converter
 
-### Moisture sensor
-   ![your figure](IMAGES/moisture.png)
-
 [TC1046 datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/21496C.pdf?fbclid=IwAR3JS0fTOTgRv-BpEHv4b_GTBlFUy0KrOrPso-AE79n30IDYJwicSIyW-h8)
 
+### Moisture sensor
+   ![your figure](IMAGES/moisture.png)
 <a name="libs"></a>
 
 ## Libraries description
