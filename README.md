@@ -23,9 +23,9 @@ Link to this file in your GitHub repository:
 
 ## Project objectives
 
-Write your text here.
+Schéma zapojení:
 
-<a name="hardware"></a>
+   ![your figure](IMAGES/celkoveschema.PNG)
 
 ## Hardware description
 
