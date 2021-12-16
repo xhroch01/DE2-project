@@ -31,7 +31,7 @@ Link to this file in your GitHub repository:
 For measuring we used capacitance and temperature sensors. When the temperature was higher than the desired value, the system turns on the fans to lower the temperature.
 When the temperature reached a value lower, than the desired value, the system turns on the heating. 
 
-Soil moisture level measurement is based on the electric resistance of the soil, therefore the moisture sensor is very simple, it consists of two wires sticked into the soil.
+Soil moisture level measurement is based on the electric resistance of the soil, therefore the moisture sensor is very simple, it consists of two wires sticked into the soil. Based on data provided by moisture senzor are the valves to irrigation pumps controlled.
 
 ### Arduino uno
 
