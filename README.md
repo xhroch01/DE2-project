@@ -23,7 +23,7 @@ Link to this file in your GitHub repository:
 
 ## Project objectives
 
-Schéma zapojení:
+### Schéma zapojení:
 
    ![your figure](IMAGES/celkoveschema.PNG)
 
