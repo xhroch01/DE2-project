@@ -58,8 +58,6 @@ High Precision Temperature-to-Voltage Converter
 
 [TC1046 datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/21496C.pdf?fbclid=IwAR3JS0fTOTgRv-BpEHv4b_GTBlFUy0KrOrPso-AE79n30IDYJwicSIyW-h8)
 
-### Humidity sensor
-   ![your figure](IMAGESmoisture.png)
 <a name="libs"></a>
 
 ## Libraries description
@@ -114,7 +112,99 @@ Sem bych hodil bloky kˇodů a pospsal je
     }
 ```
 ```c
+ISR(TIMER1_OVF_vect)
+{	timing = timing + 1;
+	if ((GPIO_read(&PINB, MOIST1)) == 1)      // insufficient moisture
+	{
+		lcd_gotoxy(10, 1);
+		lcd_puts("LO");
+	}
+	else if ((GPIO_read(&PINB, MOIST1)) == 0) // sufficient moisture
+	{
+		lcd_gotoxy(10, 1);
+		lcd_puts("HI");
+	}
+	if ((GPIO_read(&PINB, MOIST2)) == 1)      // insufficient moisture
+	{
+		lcd_gotoxy(13, 1);
+		lcd_puts("LO");
+	}
+	else if ((GPIO_read(&PINB, MOIST2)) == 0) // sufficient moisture
+	{
+		lcd_gotoxy(13, 1);
+		lcd_puts("HI");
+	}
+	ADCSRA = ADCSRA | (1<<ADSC);                  //start AD conversion
+ 	if (timing == 150)                            // 10 min interval (150)
+	{
+		if (temperature <= (temperature_set - 1)) // lower temperature
+		{
+		//PORTB |= (1<<PB0); // turn on the heating
+		GPIO_write_high(&PORTC, HEAT);            // turn on the heating
+		}
+		if (temperature >= (temperature_set + 1)) // higher temperature
+		{
+			//PORTB |= (1<<PB1); // turn on the fan
+			GPIO_write_high(&PORTC, FAN);         // turn on the fan
+		}
+		if ((GPIO_read(&PINB, MOIST1)) == 1)      // insufficient moisture
+		{
+			////PORTB |= (1<<PB2); // open valve1
+			GPIO_write_high(&PORTB, VALVE1);      // open the 1st valve
+		}
+		if ((GPIO_read(&PINB, MOIST2)) == 1)      // insufficient moisture
+		{
+			////PORTB |= (1<<PB3); // open valve2
+			GPIO_write_high(&PORTB, VALVE1);      // open the 2nd valve
+		}
+		timing = 0;                               // timer reset
+	}
+	if (timing == 3)                              // 5 min (75)
+	{
+		////PORTB = PORTB & ~(1<<PINB0); //heating turned off
+		////PORTC = PORTC & ~(1<<PINC1); //heating turned off
+		GPIO_write_low(&PORTC, HEAT);             // turn off the heating
+	}
+	if (timing == 3) // 3 min (45)
+	{
+		////PORTB = PORTB & ~(1<<PINB1); //fan turned off
+		////PORTC = PORTC & ~(1<<PINC2); //fan turned off
+		GPIO_write_low(&PORTC, FAN);             // turn off the fan
+	}
+	if (timing == 3) // 1 min (15)
+	{
+		////PORTB = PORTB & ~(1<<PINB2); //valve1 closed
+		////PORTB = PORTB & ~(1<<PINB3); //valve2 closed
+		GPIO_write_low(&PORTB, VALVE1);          // close the valves
+		GPIO_write_low(&PORTB, VALVE2);
+	}
+}
+```
 
+```c
+ISR(ADC_vect)
+{
+	//float temperature = 0;
+	char temperature_string [2] = "--";
+	char temperature_dp_string [1] = "-";
+	//uint16_t AD = 480;
+	temperature = (((ADC*(1.1/1.023))-424)/6.25); // calculates the temperature from the output voltage
+	itoa(temperature, temperature_string, 10);    // converts the integer part into a string
+	itoa((floor(10*(temperature - (floor(temperature))))), temperature_dp_string, 10); //converts the first decimal point into a string
+	//temperature_string = gcvt (temperature, 3, buf); //cuts the excessive decimal points and converts the resultant number into a string
+	lcd_gotoxy(4, 1);
+	lcd_puts("--,-");
+	lcd_gotoxy(4, 1);
+	lcd_puts(temperature_string);                // integer part is displayed
+	lcd_gotoxy(6, 1);
+	lcd_puts(",");
+	lcd_gotoxy(7, 1);
+	lcd_puts(temperature_dp_string);             // decimal part is displayed
+	//char x [1] = "0";
+	//itoa(ADC, x, 10);
+	//lcd_gotoxy(4, 1);
+	//lcd_puts(x);
+}
 ```
 ### Implementation
 tady bych hodil zpracování, foto zapojeni atd
