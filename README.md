@@ -27,8 +27,10 @@ Link to this file in your GitHub repository:
 
    ![your figure](IMAGES/celkoveschema.PNG)
    
+Flowchart
    ![your figure](IMAGES/stromfinal.PNG)
-      
+
+Block diagram
    ![your figure](IMAGES/blokoveschéma.png)
 
 ## Hardware description
