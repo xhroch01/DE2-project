@@ -80,4 +80,8 @@ Write your text here
 
 ## References
 
-1. Write your text here.
+### 1. 
+[YouTube](https://www.youtube.com/)
+
+### 2. 
+[Digital-electronics-2](https://github.com/tomas-fryza/Digital-electronics-2)
