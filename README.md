@@ -84,4 +84,4 @@ Write your text here
 [YouTube](https://www.youtube.com/)
 
 ### 2. 
-[Digital-electronics-2](https://github.com/tomas-fryza/Digital-electronics-2)
+[Tomas-Fryza-Digital-electronics-2](https://github.com/tomas-fryza/Digital-electronics-2)
