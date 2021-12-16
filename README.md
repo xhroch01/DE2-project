@@ -35,7 +35,7 @@ The main objective is to implement techniques to control greenhouse. Explained b
    ![your figure](IMAGES/stromfinal.PNG)
 
 ### Block diagram
-   ![your figure](IMAGES/blokoveschéma.png)
+   ![your figure](IMAGES/blokoveschema.png)
 
 ## Hardware description
 For measuring we used capacitance and temperature sensors. When the temperature was higher than the desired value, the system turns on the fans to lower the temperature on the contrary when the temperature reached a value lower, than the desired value, the system turns on the heating. 
