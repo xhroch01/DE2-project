@@ -90,7 +90,7 @@ The video describing our project was made in OpenShot software environment. The 
 ## References
 
 ### 1. 
-[YouTube](https://www.youtube.com/)
+[YouTube](https://www.youtube.com/watch?v=zIkkEqXffzc)
 
 ### 2. 
 [Tomas-Fryza/Digital-electronics-2](https://github.com/tomas-fryza/Digital-electronics-2)
