@@ -49,7 +49,7 @@ Soil moisture level measurement is based on the electric resistance of the soil,
 Flash memory 32 KB, 14 digital pins a 6 analog pins, range USB a SPI.
 
 ### LCD
-   ![your figure](IMAGES/LCD.PNG)
+   ![your figure](IMAGES/displej.PNG)
    
 2 rows, 16 characters 
 
@@ -117,7 +117,7 @@ Sem bych hodil bloky kˇodů a pospsal je
 ### Implementation
 tady bych hodil zpracování, foto zapojeni atd
 
-![your figure](IMAGES/ales_zapojeni.PNG)
+![your figure](IMAGES/nepajivepole.PNG)
 
 <a name="video"></a>
 
