@@ -1,14 +1,17 @@
 # Greenhouse
 
+Link to GitHub repository:
+
+https://github.com/xhroch01/DE2-project
+
 ### Team members
 
-* Aleš Horna
-* Jakub Hlaváček
-* Vojtěch Hroch
-
-Link to this file in your GitHub repository:
-
-[https://github.com/your-github-account/repository-name/project](https://github.com/...)
+* Aleš Horna (responsible for code writing and implementation/simulation)
+* [GitHub reference](https://github.com/xhorna16/Digital-electronics-2)
+* Jakub Hlaváček (responsible for README.md file completition and finishing touches)
+* [GitHub reference](https://github.com/Jakubhl/Digital-electronics-2)
+* Vojtěch Hroch (responsible for video presentation and diagrams)
+* [GitHub reference](https://github.com/xhroch01/Digital-electronics-2)
 
 ### Table of contents
 
@@ -22,14 +25,17 @@ Link to this file in your GitHub repository:
 <a name="objectives"></a>
 
 ## Project objectives
+The main objective is to implement techniques to control greenhouse. Explained by diagrams below.
 
 ### Scheme:
 
    ![your figure](IMAGES/celkoveschema.PNG)
    
+### Flowchart
    ![your figure](IMAGES/stromfinal.PNG)
-      
-   ![your figure](IMAGES/blokové schema.png)
+
+### Block diagram
+   ![your figure](IMAGES/blokoveschéma.png)
 
 ## Hardware description
 For measuring we used capacitance and temperature sensors. When the temperature was higher than the desired value, the system turns on the fans to lower the temperature on the contrary when the temperature reached a value lower, than the desired value, the system turns on the heating. 
@@ -85,7 +91,7 @@ The video describing our project was made in OpenShot software environment. The 
 ## References
 
 ### 1. 
-[YouTube](https://www.youtube.com/)
+[YouTube](https://www.youtube.com/watch?v=zIkkEqXffzc)
 
 ### 2. 
 [Tomas-Fryza/Digital-electronics-2](https://github.com/tomas-fryza/Digital-electronics-2)
