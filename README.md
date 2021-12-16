@@ -87,8 +87,7 @@ xxx
 ### Implementation
 tady bych hodil zpracování, foto zapojeni atd
 
-
-Write your text here.
+![your figure](IMAGES/.PNG)
 
 <a name="video"></a>
 
