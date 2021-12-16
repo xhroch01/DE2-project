@@ -49,7 +49,7 @@ Soil moisture level measurement is based on the electric resistance of the soil,
 Flash memory 32 KB, 14 digital pins a 6 analog pins, range USB a SPI.
 
 ### LCD
-   ![your figure](IMAGES/LCD.PNG)
+   ![your figure](IMAGES/displej.PNG)
    
 2 rows, 16 characters 
 
@@ -112,63 +112,7 @@ Sem bych hodil bloky kˇodů a pospsal je
     }
 ```
 ```c
-ISR(TIMER1_OVF_vect)
-{	timing = timing + 1;
-	if ((GPIO_read(&PINB, MOIST1)) == 1)      // insufficient moisture
-	{
-		lcd_gotoxy(10, 1);
-		lcd_puts("LO");
-	}
-	else if ((GPIO_read(&PINB, MOIST1)) == 0) // sufficient moisture
-	{
-		lcd_gotoxy(10, 1);
-		lcd_puts("HI");
-	}
-	if ((GPIO_read(&PINB, MOIST2)) == 1)      // insufficient moisture
-	{
-		lcd_gotoxy(13, 1);
-		lcd_puts("LO");
-	}
-	else if ((GPIO_read(&PINB, MOIST2)) == 0) // sufficient moisture
-	{
-		lcd_gotoxy(13, 1);
-		lcd_puts("HI");
-	}
-	ADCSRA = ADCSRA | (1<<ADSC);                  //start AD conversion
- 	if (timing == 150)                            // 10 min interval (150)
-	{
-		if (temperature <= (temperature_set - 1)) // lower temperature
-		{
-		GPIO_write_high(&PORTC, HEAT);            // turn on the heating
-		}
-		if (temperature >= (temperature_set + 1)) // higher temperature
-		{
-			GPIO_write_high(&PORTC, FAN);         // turn on the fan
-		}
-		if ((GPIO_read(&PINB, MOIST1)) == 1)      // insufficient moisture
-		{
-			GPIO_write_high(&PORTB, VALVE1);      // open the 1st valve
-		}
-		if ((GPIO_read(&PINB, MOIST2)) == 1)      // insufficient moisture
-		{
-			GPIO_write_high(&PORTB, VALVE1);      // open the 2nd valve
-		}
-		timing = 0;                               // timer reset
-	}
-	if (timing == 3)                              // 5 min (75)
-	{
-		GPIO_write_low(&PORTC, HEAT);             // turn off the heating
-	}
-	if (timing == 3) // 3 min (45)
-	{
-		GPIO_write_low(&PORTC, FAN);             // turn off the fan
-	}
-	if (timing == 3) // 1 min (15)
-	{
-		GPIO_write_low(&PORTB, VALVE1);          // close the valves
-		GPIO_write_low(&PORTB, VALVE2);
-	}
-}
+
 ```
 ### Implementation
 tady bych hodil zpracování, foto zapojeni atd
