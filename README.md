@@ -1,5 +1,9 @@
 # Greenhouse
 
+Link to GitHub repository:
+
+https://github.com/xhroch01/DE2-project
+
 ### Team members
 
 * Aleš Horna (responsible for code writing and implementation/simulation)
