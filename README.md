@@ -48,6 +48,15 @@ Soil moisture level measurement is based on the electric resistance of the soil,
 
 Flash memory 32 KB, 14 digital pins a 6 analog pins, range USB a SPI.
 
+### LCD
+   ![your figure](IMAGES/LCD.PNG)
+   
+2 rows, 16 characters 
+
+### TC1046
+High Precision Temperature-to-Voltage Converter
+[TC1046 datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/21496C.pdf?fbclid=IwAR3JS0fTOTgRv-BpEHv4b_GTBlFUy0KrOrPso-AE79n30IDYJwicSIyW-h8)
+
 <a name="libs"></a>
 
 ## Libraries description
@@ -87,7 +96,7 @@ xxx
 ### Implementation
 tady bych hodil zpracování, foto zapojeni atd
 
-![your figure](IMAGES/nepajivepole.jpg)
+![your figure](IMAGES/ales_zapojeni.PNG)
 
 <a name="video"></a>
 
