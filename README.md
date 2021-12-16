@@ -61,7 +61,7 @@ High Precision Temperature-to-Voltage Converter
 
 ### Moisture sensor
 
-![your figure](IMAGES/moisture.PNG)
+![your figure](IMAGES/moisture.png)
 
 <a name="libs"></a>
 
