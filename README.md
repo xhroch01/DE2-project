@@ -39,8 +39,9 @@ Soil moisture level measurement is based on the electric resistance of the soil,
 
 Flash memory 32 KB, 14 digital pins a 6 analog pins, range USB a SPI.
 
-## Libraries description
 <a name="libs"></a>
+
+## Libraries description
 In this project we utilized libraries such as: "avr/io.h", "avr/interrupt.h", "util/delay.h", "stdlib.h", "math.h", "timer.h", "gpio.h", "lcd.h" and lcd_definitions.h
 
 #### <avr/io.h>
@@ -73,8 +74,8 @@ Write your text here.
 <a name="video"></a>
 
 ## Video
+The video describing our project was made in OpenShot software environment. The dialog in this video is made by Vojtěch Hroch.
 
-Write your text here
 
 <a name="references"></a>
 
