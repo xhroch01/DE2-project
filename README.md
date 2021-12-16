@@ -74,7 +74,7 @@ Write your text here.
 <a name="video"></a>
 
 ## Video
-The video describing our project was made in OpenShot software environment. The dialog in this video is made by Vojtěch Hroch.
+The video describing our project was made in OpenShot software environment. The monolog in this video is made by Vojtěch Hroch.
 
 
 <a name="references"></a>
