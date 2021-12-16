@@ -95,7 +95,7 @@ xxx
 
 ### Implementation
 
-![your figure](IMAGES/ales_zapojeni.PNG)
+![your figure](IMAGES/nepajivepole.jpg)
 
 <a name="video"></a>
 
