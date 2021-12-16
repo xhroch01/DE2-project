@@ -25,7 +25,7 @@ https://github.com/xhroch01/DE2-project
 <a name="objectives"></a>
 
 ## Project objectives
-
+The main objective is to implement temperature mearusing and controlling the greenhouse
 ### Scheme:
 
    ![your figure](IMAGES/celkoveschema.PNG)
