@@ -33,12 +33,11 @@ When the temperature reached a value lower, than the desired value, the system t
 
 Soil moisture level measurement is based on the electric resistance of the soil, therefore the moisture sensor is very simple, it consists of two wires sticked into the soil.
 
-### arduino uno
+### Arduino uno
 
-   ![your figure](IMAGES/arduino.PNG)
+   ![your figure](IMAGES/Arduino.PNG)
 
 Flash memory 32 KB, 14 digital pins a 6 analog pins, range USB a SPI.
-
 
 ## Libraries description
 
