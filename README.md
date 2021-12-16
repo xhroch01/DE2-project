@@ -78,7 +78,16 @@ This library is used for AVR pin configurations.
 Those two libraries are utilized to control the LCD. Concretely the "lcd.h" library defines place (coordinates) to write the message on LCD (function: lcd_gotoxy), also the message itself (lcd_puts). The "lcd-definitions.h" library defines LCD pins.
 ## Main application
 
-Write your text here.
+### Program
+Sem bych hodil bloky kˇodů a pospsal je
+```c
+xxx
+```
+
+### Implementation
+tady bych hodil zpracování, foto zapojeni atd
+
+![your figure](IMAGES/.PNG)
 
 <a name="video"></a>
 
