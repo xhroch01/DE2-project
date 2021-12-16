@@ -28,10 +28,17 @@ Link to this file in your GitHub repository:
    ![your figure](IMAGES/celkoveschema.PNG)
 
 ## Hardware description
+For measuring we used capacitance and temperature sensors. When the temperature was higher than the desired value, the system turns on the fans to lower the temperature.
+When the temperature reached a value lower, than the desired value, the system turns on the heating. 
 
-Write your text here.
+Soil moisture level measurement is based on the electric resistance of the soil, therefore the moisture sensor is very simple, it consists of two wires sticked into the soil.
 
-<a name="libs"></a>
+### arduino uno
+
+   ![your figure](IMAGES/arduino.PNG)
+
+Flash memory 32 KB, 14 digital pins a 6 analog pins, range USB a SPI.
+
 
 ## Libraries description
 
