@@ -94,7 +94,6 @@ xxx
 ```
 
 ### Implementation
-tady bych hodil zpracování, foto zapojeni atd
 
 ![your figure](IMAGES/ales_zapojeni.PNG)
 
