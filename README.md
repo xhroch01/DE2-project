@@ -87,7 +87,7 @@ xxx
 ### Implementation
 tady bych hodil zpracování, foto zapojeni atd
 
-![your figure](IMAGES/.PNG)
+![your figure](IMAGES/nepajivepole.jpg)
 
 <a name="video"></a>
 
