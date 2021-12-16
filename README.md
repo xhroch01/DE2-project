@@ -44,7 +44,17 @@ Flash memory 32 KB, 14 digital pins a 6 analog pins, range USB a SPI.
 In this project we utilized libraries such as: "avr/io.h", "avr/interrupt.h", "util/delay.h", "stdlib.h", "math.h", "timer.h", "gpio.h", "lcd.h" and lcd_definitions.h
 
 #### <avr/io.h>
+This library contains IO (input/output) definitions for the devices based on AVR type of chip.
+
 #### <avr/interrupt.h>
+Library is used in the project to handle the interrupts
+
+#### <util_delay.h>
+Library "util_delay.h" is utilized for the definition of CPU frequency, also can be used for example as busy-wait function.
+
+#### <util_delay.h>
+Library "util_delay.h" is utilized for the definition of CPU frequency, also can be used for example as busy-wait function.
+
 
 ## Main application
 
